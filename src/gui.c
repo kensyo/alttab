@@ -682,6 +682,7 @@ int uiNextWindow()
         selNdx = 0;
     msg(0, "item %d\n", selNdx);
     framesRedraw();
+    setFocus(selNdx);
     return 1;
 }
 
@@ -697,6 +698,7 @@ int uiPrevWindow()
         selNdx = g.maxNdx - 1;
     msg(0, "item %d\n", selNdx);
     framesRedraw();
+    setFocus(selNdx);
     return 1;
 }
 
@@ -713,6 +715,7 @@ int uiSelectWindow(int ndx)
     selNdx = ndx;
     msg(0, "item %d\n", selNdx);
     framesRedraw();
+    setFocus(selNdx);
     return 1;
 }
 
