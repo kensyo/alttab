@@ -628,6 +628,7 @@ void uiExpose()
     }
 // frame
     framesRedraw();
+    setFocus(selNdx);
 }
 
 //
